@@ -21,9 +21,9 @@ public class Main {
         double mediaEvaluacionesUsuario = 0;
 
         System.out.println("Pelicula: " + nombre);
-        System.out.println(fechaDeLanzamiento);
-        System.out.println(evaluacion);
-        System.out.println(incluidoEnElPlanBasico);
+        System.out.println("Fecha de Lanzamiento: " + fechaDeLanzamiento);
+        System.out.println("Evaluación: " + evaluacion);
+        System.out.println("Incluido en el plan básico: " + incluidoEnElPlanBasico);
 
         double mediaEvaluacion = (4.5 + 4.8 + 3) / 3;
         System.out.println("Media de la evaluacion de matrix: " + mediaEvaluacion);
