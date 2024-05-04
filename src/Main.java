@@ -1,47 +1,28 @@
-import java.util.Scanner;
+import modelo.Pelicula;
+import modelo.Serie;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Bienvenidos a la inmersión en Java!");
-        //System.out.println("Pelicula Matrix");
-        //DECLARACION DE VARIABLES
-
-        int fechaDeLanzamiento = 1999;
-        double evaluacion = 4.5;
-        boolean incluidoEnElPlanBasico = true;
-        String nombre ="Matrix";
-        String sinopsis = """
-                la mejor pelicula del fin del mileno
-                """ ;
-
-        double mediaEvaluacionesUsuario = 0;
-
-        System.out.println("Pelicula: " + nombre);
-        System.out.println("Fecha de Lanzamiento: " + fechaDeLanzamiento);
-        System.out.println("Evaluación: " + evaluacion);
-        System.out.println("Incluido en el plan básico: " + incluidoEnElPlanBasico);
-
-        double mediaEvaluacion = (4.5 + 4.8 + 3) / 3;
-        System.out.println("Media de la evaluacion de matrix: " + mediaEvaluacion);
-
-        if (fechaDeLanzamiento >= 2023){
-            System.out.println("pelicula popular en el momento");
-        } else {
-            System.out.println("Pelicula retro que vale la pena ver");
-        }
-
-
-        for (int i = 1; i <= 3; i++) {
-            Scanner teclado = new Scanner(System.in);
-            System.out.println("ingresa la nota que le darias a matrix");
-            double notaMatrix = teclado.nextDouble();
-            mediaEvaluacionesUsuario = mediaEvaluacionesUsuario + notaMatrix;
-
-        }
-        System.out.println("La media de la pelicula Matrix calculada por el usuario es: " + mediaEvaluacionesUsuario/3);
+        Principal principal = new Principal();
+        principal.muestraElMenu();
+//        Pelicula matrix = new Pelicula();
+//        matrix.setNombre("Matrix");
+//        matrix.setTiempoDeDuracionEnMinutos(120);
+//        matrix.setFechaDeLanzamiento(1999);
+//        //System.out.println(matrix.nombre);
+//        //System.out.println(matrix.tiempoDeDuracionEnMinutos);
+//        //System.out.println(matrix.fechaDeLanzamiento);
+//        matrix.muestraFichaTecnica();
+//
+//        Serie friends = new Serie();
+//        friends.setNombre("Friends");
+//        friends.setFechaDeLanzamiento(1996);
+//        friends.setTemporadas(10);
+//        friends.setEpisodiosPorTemporada(22);
+//        friends.setDuracionEnMinutosPorEpisodio(30);
+//        friends.muestraFichaTecnica();
     }
+
 }
